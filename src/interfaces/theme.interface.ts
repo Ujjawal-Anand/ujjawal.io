@@ -8,13 +8,13 @@ export interface ITheme {
 
 export interface IStyledProps {
     theme: ITheme;
-    title?: boolean | undefined | null;
+    title?: any;
     active?: number | string;
     index?: number | string;
     final?: boolean;
     id?: string;
     onClick?: (e: React.MouseEvent, i: number) => void;
-    ref?: React.RefObject<HTMLDivElement | HTMLUListElement | null>;
+    ref?: any;
 }
 
 export interface DefaultTheme {

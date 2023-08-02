@@ -5,7 +5,7 @@ import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 interface HeroProps {
-  handleClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+  handleClick?: (e: React.MouseEvent) => void;
 }
 
 const Hero: FC<HeroProps> = (props: HeroProps) => (

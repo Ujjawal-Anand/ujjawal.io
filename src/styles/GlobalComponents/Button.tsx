@@ -1,12 +1,12 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, MouseEvent } from 'react'
 
 import { ButtonBack, ButtonFront } from './index'
 interface ButtonProps {
   children: ReactNode;
-  alt: boolean;
-  form: boolean;
-  disabled: boolean;
-  onClick: (e: React.MouseEvent) => void;
+  alt?: boolean;
+  form?: boolean;
+  disabled?: boolean;
+  onClick?: (e: React.MouseEvent) => void;
 }
 const Button = (props: ButtonProps) => (
   <ButtonBack alt={props.alt} form={props.form} disabled={props.disabled}>{props.children}
